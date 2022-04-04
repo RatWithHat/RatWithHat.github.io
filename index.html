@@ -1,13 +1,37 @@
 <!DOCTYPE html>
 <html>
-<body>
-<h1>Welcome</h1>
-<p>This is my Website where I will put all my Minecraft Server Links, You can play all of these in the browser.</p>
-  
-<p> Remember to Turn down the Render distance to short or tiny for more performance, Turning off fog and antialiasing also helps.</p>
-  <p> Also turn Performance to max fps for more fps </p>
-<a href="https://MatthewServer.matthewbrink.repl.co">My Survival Server</a>
-<a href="https://Creative-Flatworld.matthewbrink.repl.co">Creative Server</a>
-<img src="https://github.com/RatWithHat/RatWithHat.github.io/blob/main/Rat.png?raw=true" </img>
+<head>
+<title>eagler</title>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<meta name="description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord." />
+<meta name="keywords" content="minecraft, applet, chromebook, lax1dude, games, eaglercraft, eagler" />
+<meta name="author" content="LAX1DUDE" />
+<meta property="og:title" content="Eaglercraft" />
+<meta property="og:locale" content="en-US" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://media.discordapp.net/attachments/378764518081429506/932053915061587978/thumbnail2.png" />
+<meta property="og:description" content="Eaglercraft is real Minecraft 1.5.2 that you can play in any regular web browser. That includes school chromebooks, it works on all chromebooks. You can join real Minecraft 1.5.2 servers with it through a custom proxy based on Bungeecord." />
+<!-- Change this: <meta property="og:url" content="https://g.eags.us/eaglercraft/" /> -->
+<script type="text/javascript" src="classes.js"></script>
+<script type="text/javascript">
+window.addEventListener("load", function(){
+window.minecraftOpts = [
+"game_frame","assets.epk",
+"CgAACQAHc2VydmVycwoAAAABCAACaXAAIHdzKHMpOi8vIChhZGRyZXNzIGhlcmUpOihwb3J0KSAvCAAEbmFtZQAIdGVtcGxhdGUBAAtoaWRlQWRkcmVzcwEIAApmb3JjZWRNT1REABl0aGlzIGlzIG5vdCBhIHJlYWwgc2VydmVyAAA="
+];
+(function(){
+var q = window.location.search;
+if(typeof q === 'string' && q.startsWith("?")) {
+	q = new URLSearchParams(q);
+	var s = q.get("server");
+	if(s) window.minecraftOpts.push(s);
+}
+})();
+main();
+});
+</script>
+</head>
+<body style="margin:0px;width:100vw;height:100vh;" id="game_frame">
 </body>
 </html>
